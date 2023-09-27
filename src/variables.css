@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+
+:root {
+    /* fonts */
+    --header-font: 'Darumadrop One', sans-serif;
+    --body-font: 'Darumadrop One', sans-serif;
+    --nav-font: 'Darumadrop One', sans-serif;
+    
+    /* color palette */
+    --black: #000000cf;
+    --cream: #f3ebc9;
+  }  

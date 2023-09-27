@@ -1,0 +1,25 @@
+#customNavbar {
+    width: 100vw;
+    /* background-color: blue; */
+}
+
+.customNavbarCollapse {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+#customNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+.customLink {
+    font-size: 28px;
+    padding: 30px; 
+    color: black;
+}

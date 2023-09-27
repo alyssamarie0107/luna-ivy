@@ -1,3 +1,4 @@
 .App {
-    background-color: #FFFCEF;
+    background-color: var(--cream);
+    font-family: var(--header-font);
 }
