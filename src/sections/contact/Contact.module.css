@@ -1,0 +1,33 @@
+#Contact {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+#contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+}
+
+#contactContainer > h1{
+    margin: 10px;
+    letter-spacing: 4px;
+}
+
+#contactContainer > h1 > a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+#doodleContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 20px 0 0;
+    /* background-color: blue; */
+}

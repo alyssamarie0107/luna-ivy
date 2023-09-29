@@ -4,6 +4,7 @@ import Home from './sections/home/Home';
 import Videos from './sections/videos/Videos';
 import HorizontalLine from './components/horizontal-line/HorizontalLine';
 import Music from './sections/music/Music';
+import Contact from './sections/contact/Contact';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Videos embedId="L_bkwHCTjqA" />
       <HorizontalLine />
       <Music />
+      <HorizontalLine />
+      <Contact />
       <HorizontalLine />
     </div>
   );
