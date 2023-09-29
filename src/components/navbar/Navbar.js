@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import LunaIvyLogo from '../../assets/logo/lunaivy-transparent.png';
+import SocialBtns from '../buttons/social-btns/SocialBtns';
 
 function BasicExample() {
   return (
@@ -29,6 +30,8 @@ function BasicExample() {
                     <Nav.Link className={ styles.customLink } href="#merch">merch</Nav.Link>
                     <Nav.Link className={ styles.customLink } href="#contact">contact</Nav.Link>
                 </Nav>
+
+                <SocialBtns />
             </Navbar.Collapse>
       </Container>
     </Navbar>

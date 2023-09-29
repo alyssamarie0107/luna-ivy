@@ -13,7 +13,7 @@ const Home = () => {
                 <img
                     src={ SavyPhoto }
                     width="450px"
-                    height="380px"
+                    height="400px"
                     alt="Savy Cover Art"
                 />
             </div>

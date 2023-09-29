@@ -1,0 +1,9 @@
+#socialBtnsContainer {
+    margin-top: 10px;
+    /* background-color: green; */
+}
+
+.socialBtn {
+    color: black;
+    margin: 0 8px;
+}
