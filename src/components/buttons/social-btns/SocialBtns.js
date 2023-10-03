@@ -1,6 +1,6 @@
 import styles from './SocialBtns.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpotify, faApple, faSoundcloud, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faSpotify, faApple, faSoundcloud, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
 
 // social btn component
 // for spotify, apple music, soundcloud, instagram
@@ -37,6 +37,11 @@ const SocialBtns = () => {
                 {/* instagram */}
                 <SocialBtn href="https://www.instagram.com/lunalvy_/">
                     <FontAwesomeIcon className={ styles.socialBtn } icon={ faInstagram } size="2x"/>
+                </SocialBtn>
+
+                {/* tiktok */}
+                <SocialBtn href="https://www.tiktok.com/@lunaivy_">
+                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faTiktok } size="2x"/>
                 </SocialBtn>
             </div>
         </div>
