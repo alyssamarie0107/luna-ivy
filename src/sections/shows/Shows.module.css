@@ -1,0 +1,41 @@
+#Shows {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+#Shows > h1 {margin-bottom: 75px;}
+
+#showsContainer {
+    width: 75vw;
+    /* background-color: green; */
+}
+
+.listGroup {
+    display: flex;
+    color: red;
+    justify-content: space-between;
+    background-color: black;
+    /* background-color: blue; */
+}
+
+.Date > p,
+.Location > p {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.Location {
+    width: 30%;
+    /* background-color: orange; */
+}
+
+@media only screen and (max-width: 991px) {
+    .listGroup {flex-direction: column;}
+
+    .Location {width: 100%;}
+}

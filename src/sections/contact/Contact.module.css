@@ -12,15 +12,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     /* background-color: green; */
 }
 
-#contactContainer > h1{
-    margin: 10px;
-    letter-spacing: 4px;
-}
+#contactContainer > h2:nth-child(1) {margin-bottom: 40px;}
 
-#contactContainer > h1 > a {
+#contactContainer > h2 {letter-spacing: 4px;}
+
+#contactContainer > h2 > a {
     color: var(--black);
     text-decoration: none;
 }
@@ -28,6 +28,6 @@
 #doodleContainer {
     display: flex;
     justify-content: flex-end;
-    margin: 30px 20px 0 0;
+    margin: 30px 75px 40px 0;
     /* background-color: blue; */
 }

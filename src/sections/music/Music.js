@@ -6,19 +6,8 @@ const Music = () => {
     return (
         <section id={ styles.Music }>
             <div id={ styles.musicContainer }>
-                <img
-                        src={ SavyPhoto2 }
-                        width="190px"
-                        height="650px"
-                        alt="Savy2"
-                />
-
-                <img
-                    src={ Pity }
-                    width="520px"
-                    height="480px"
-                    alt="Pity"
-                />
+                <img src={ SavyPhoto2 } alt="Savy2"/>
+                <img src={ Pity } alt="Pity"/>
             </div>
         </section>
     );

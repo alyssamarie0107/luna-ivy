@@ -1,0 +1,13 @@
+/* footer component css */
+#Footer {
+    display: flex;
+    padding: 20px 75px;
+    color: red;
+    /* color: var(--cream); */
+    background-color: black;
+}
+
+#Footer > span {
+    font-size: 20px;
+    letter-spacing: 3px;
+}

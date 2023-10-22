@@ -1,4 +1,13 @@
 .App {
     background-color: var(--cream);
     font-family: var(--header-font);
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 35px;
 }

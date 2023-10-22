@@ -1,43 +1,48 @@
 import styles from './Navbar.module.css';
-import Container from 'react-bootstrap/Container';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import LunaIvyLogo from '../../assets/logo/lunaivy-transparent.png';
 import SocialBtns from '../buttons/social-btns/SocialBtns';
 
-function BasicExample() {
+const CustomNavbar = () => {
   return (
-    <Navbar expand="lg" id={ styles.customNavbar  }>
-        <Container>
-            <Navbar.Toggle aria-controls="navbar-nav" />
+    <Navbar collapseOnSelect expand="lg" id={ styles.customNavbar  }>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 
-            <Navbar.Collapse className={ styles.customNavbarCollapse } id="navbar-nav">
-                <Nav id = { styles.customNav  }>
-                    <Nav.Link className={ styles.customLink } href="#home">home</Nav.Link>
-                    <Nav.Link className={ styles.customLink } href="#videos">videos</Nav.Link>
-                    <Nav.Link className={ styles.customLink } href="#music">music</Nav.Link>
+      <Navbar.Collapse className={ styles.customNavbarCollapse } id="responsive-navbar-nav">
+        <Nav id={ styles.customNav }>
+          <div>
+            <Nav.Link className={ styles.customLink } href="#home">home</Nav.Link>
+            <Nav.Link className={ styles.customLink } href="#shows">shows</Nav.Link>
+            <Nav.Link className={ styles.customLink } href="#videos">videos</Nav.Link>
+          </div>
 
-                    <Navbar.Brand href="#home">
-                        <img
-                        src={ LunaIvyLogo }
-                        width="420px"
-                        height="260px"
-                        alt="Luna Ivy logo"
-                        />
-                    </Navbar.Brand>
+          <Navbar.Brand href="#home" id={ styles.NavBrand }>
+              <img
+              src={ LunaIvyLogo }
+              alt="Luna Ivy logo"
+              />
+          </Navbar.Brand>
 
-                    <Nav.Link className={ styles.customLink } href="#about">about</Nav.Link>
-                    <Nav.Link className={ styles.customLink } href="#merch">merch</Nav.Link>
-                    <Nav.Link className={ styles.customLink } href="#contact">contact</Nav.Link>
-                </Nav>
-
-                <SocialBtns />
-            </Navbar.Collapse>
-      </Container>
+          <div>
+            <Nav.Link className={ styles.customLink } href="#music">music</Nav.Link>
+            <Nav.Link className={ styles.customLink } href="#contact">contact</Nav.Link>
+            <SocialBtns />
+          </div>
+        </Nav>
+      </Navbar.Collapse>
+      
+      <Navbar.Brand href="#home" id={ styles.NavBrand2 }>
+          <img
+          src={ LunaIvyLogo }
+          alt="Luna Ivy logo2"
+          />
+      </Navbar.Brand>
     </Navbar>
 
     
   );
 }
 
-export default BasicExample;
+export default CustomNavbar;

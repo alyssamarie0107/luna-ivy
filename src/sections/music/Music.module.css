@@ -8,11 +8,30 @@
 
 #musicContainer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     /* background-color: orange; */
 }
 
 #musicContainer > img {
     margin: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#musicContainer > img:nth-child(1) {
+    width: 190px;
+    height: 650px;
+}
+
+#musicContainer > img:nth-child(2) {
+    width: 520px;
+    height: 480px;
+}
+
+@media only screen and (max-width: 1150px) {
+    #musicContainer > img:nth-child(2) {
+        width: 80vw;
+        height: 80vw;
+    }
 }

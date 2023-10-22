@@ -21,27 +21,27 @@ const SocialBtns = () => {
             <div id={ styles.socialBtnsContainer }>
                 {/* spotify */}
                 <SocialBtn href="https://open.spotify.com/artist/4vuzGI5ng663Sskw6mrd0v">
-                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faSpotify } size="2x"/>
+                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faSpotify } />
                 </SocialBtn>
 
                 {/* apple music */}
                 <SocialBtn href="https://music.apple.com/us/artist/luna-ivy/1683069273">
-                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faApple } size="2x"/>
+                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faApple } />
                 </SocialBtn>
 
                 {/* soundcloud */}
                 <SocialBtn href="https://on.soundcloud.com/ZSnyCdwVHeVUschq6">
-                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faSoundcloud } size="2x"/>
+                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faSoundcloud } />
                 </SocialBtn>
 
                 {/* instagram */}
                 <SocialBtn href="https://www.instagram.com/lunalvy_/">
-                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faInstagram } size="2x"/>
+                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faInstagram } />
                 </SocialBtn>
 
                 {/* tiktok */}
                 <SocialBtn href="https://www.tiktok.com/@lunaivy_">
-                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faTiktok } size="2x"/>
+                    <FontAwesomeIcon className={ styles.socialBtn } icon={ faTiktok } />
                 </SocialBtn>
             </div>
         </div>
