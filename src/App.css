@@ -4,10 +4,8 @@
     overflow: hidden;
 }
 
-h1 {
-    font-size: 45px;
-}
+h1 {font-size: 45px;}
 
-h2 {
-    font-size: 35px;
-}
+h2 {font-size: 35px;}
+
+section > h1 {text-align: center;}
