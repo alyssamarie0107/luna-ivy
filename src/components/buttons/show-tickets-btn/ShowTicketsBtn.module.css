@@ -1,0 +1,10 @@
+.ShowTicketsBtn {
+    width: 150px;
+    color: red;
+    border-color: red;
+    font-size: 20px;
+}
+
+.ShowTicketsBtn:hover {
+    background-color: red;
+}
