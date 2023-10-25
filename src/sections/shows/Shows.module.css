@@ -17,21 +17,16 @@
 .listGroup {
     display: flex;
     color: red;
+    align-items: center;
     justify-content: space-between;
     background-color: black;
-    /* background-color: blue; */
 }
 
-.Date > p,
-.Location > p {
+.DateVenue > p,
+.City > p {
     padding: 0;
     margin: 0;
     font-size: 20px;
-}
-
-.Location {
-    width: 30%;
-    /* background-color: orange; */
 }
 
 @media only screen and (max-width: 991px) {

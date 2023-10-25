@@ -1,5 +1,6 @@
 import styles from './Shows.module.css';
 import ListGroup from 'react-bootstrap/ListGroup';
+// import ShowTicketsBtn from '../../components/buttons/show-tickets-btn/ShowTicketsBtn';
 
 const Shows = () => {
     return (
@@ -8,48 +9,49 @@ const Shows = () => {
             <div id={ styles.showsContainer }>
                 <ListGroup>
                     <ListGroup.Item className={ styles.listGroup }>
-                        <div className={ styles.Date }>
+                        <div className={ styles.DateVenue }>
                             <p>Nov. 9, 2023</p>
-                        </div>
-                        <div className= { styles.Location }>
-                            <p>San Francisco, CA</p>
                             <p>Brick & Mortar</p>
                         </div>
+                        <div className= { styles.City }>
+                            <p>San Francisco, CA</p>
+                        </div>
                     </ListGroup.Item>
                     <ListGroup.Item className={ styles.listGroup }>
-                        <div className={ styles.Date }>
+                        <div className={ styles.DateVenue }>
                             <p>Nov. 24, 2023</p>
-                        </div>
-                        <div className= { styles.Location }>
-                            <p>Berkeley, CA</p>
                             <p>TBD</p>
                         </div>
+                        <div className= { styles.City }>
+                            <p>Berkeley, CA</p>
+                        </div>
                     </ListGroup.Item>
                     <ListGroup.Item className={ styles.listGroup }>
-                        <div className={ styles.Date }>
+                        <div className={ styles.DateVenue }>
                             <p>Dec. 1, 2023</p>
+                            <p>Psyched! Radio SF</p>
                         </div>
-                        <div className= { styles.Location }>
+                        <div className= { styles.City }>
                             <p>San Francisco, CA</p>
-                            <p>Pyschedradio</p>
                         </div>
+                        {/* <ShowTicketsBtn link="https://www.ticketweb.com/event/ha-vay-mommy-mommy-luna-neck-of-the-woods-tickets/13790888"/> */}
                     </ListGroup.Item>
                     <ListGroup.Item className={ styles.listGroup }>
-                        <div className={ styles.Date }>
+                        <div className={ styles.DateVenue }>
                             <p>Dec. 10, 2023</p>
+                            <p>Neck of the Woods</p>
                         </div>
-                        <div className= { styles.Location }>
+                        <div className= { styles.City }>
                             <p>San Francisco, CA</p>
-                            <p>Neck of the Wodds</p>
                         </div>
                     </ListGroup.Item>
                     <ListGroup.Item className={ styles.listGroup }>
-                        <div className={ styles.Date }>
+                        <div className={ styles.DateVenue }>
                             <p>Dec. 31, 2023</p>
-                        </div>
-                        <div className= { styles.Location }>
-                            <p>Oakland, CA</p>
                             <p>New Year's House Show</p>
+                        </div>
+                        <div className= { styles.City }>
+                            <p>Oakland, CA</p>
                         </div>
                     </ListGroup.Item>
                 </ListGroup>
