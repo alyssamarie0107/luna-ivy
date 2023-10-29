@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 const Shows = () => {
     return (
-        <section id={ styles.Shows }>
+        <section className={ styles.Shows } id="shows">
             <h1>Show Dates</h1>
             <div id={ styles.showsContainer }>
                 <ListGroup>

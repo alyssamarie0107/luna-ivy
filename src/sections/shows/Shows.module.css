@@ -1,4 +1,4 @@
-#Shows {
+.Shows {
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-#Shows > h1 {margin-bottom: 75px;}
+.Shows > h1 {margin-bottom: 75px;}
 
 #showsContainer {
     width: 75vw;

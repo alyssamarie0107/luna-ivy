@@ -4,7 +4,7 @@ import Pity from '../../assets/photos/pity/pity.png';
 
 const Music = () => {
     return (
-        <section id={ styles.Music }>
+        <section className={ styles.Music } id="music">
             <div id={ styles.musicContainer }>
                 <img src={ SavyPhoto2 } alt="Savy2"/>
                 <img src={ Pity } alt="Pity"/>

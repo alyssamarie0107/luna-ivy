@@ -4,7 +4,7 @@ import SavyPhoto from '../../assets/photos/savy/savy-cover-art.jpg';
 // home section 
 const Home = () => {
     return(
-        <section id={ styles.Home }>
+        <section className={ styles.Home } id="home">
             <div id={ styles.homeContainer }>
                 <img src={ SavyPhoto } alt="Savy Cover Art"/>
                 <div id={ styles.newSingleInfo}>

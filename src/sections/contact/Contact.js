@@ -3,7 +3,7 @@ import KittyDoodle from '../../assets/doodles/kitty-transparent.png';
 
 const Contact = () => {
     return (
-        <section id={ styles.Contact }>
+        <section className={ styles.Contact } id="contact">
             <div id={ styles.contactContainer }>
                 <h2>Management:<br/>Alyssa Rodriguez</h2>
                 <h2>Booking:<br/><a href="mailto:booklunaivy@gmail.com">booklunaivy@gmail.com</a></h2>

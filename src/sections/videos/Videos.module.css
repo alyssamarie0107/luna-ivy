@@ -1,4 +1,4 @@
-#Videos {
+.Videos {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -8,7 +8,7 @@
   /* background-color: red; */
 }
 
-#Videos > h1 {margin-bottom: 50px;}
+.Videos > h1 {margin-bottom: 50px;}
 
 #VideosContainer {
   display: flex;

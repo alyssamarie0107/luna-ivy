@@ -5,7 +5,7 @@ import PartyKittyDoodle from '../../assets/doodles/kitty2-transparent.png';
 // video(s) section 
 const Videos = ({ embedId }) => {
     return(
-        <section id={ styles.Videos }>
+        <section className={ styles.Videos } id="videos">
             <h1>"pity" music video out now!</h1>
             <div id={ styles.VideosContainer }>
                 <img src={ PartyKittyDoodle } alt="Luna Ivy logo"/>
