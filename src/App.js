@@ -33,7 +33,8 @@ const App = () => {
           <ScaleLoader
           color={"red"}
           loading={loading}
-          radius={"5"}
+          width={"10"}
+          height={"50"}
           aria-label="Loading Spinner"
           data-testid="loader"
           />
