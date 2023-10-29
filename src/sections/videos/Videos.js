@@ -8,7 +8,7 @@ const Videos = ({ embedId }) => {
         <section className={ styles.Videos } id="videos">
             <h1>"pity" music video out now!</h1>
             <div id={ styles.VideosContainer }>
-                <img src={ PartyKittyDoodle } alt="Luna Ivy logo"/>
+                <img src={ PartyKittyDoodle } alt="Party Kitty"/>
                 <div id={ styles.VideoResponsive }>
                     <iframe
                       src={`https://www.youtube.com/embed/${ embedId }`}
@@ -17,7 +17,7 @@ const Videos = ({ embedId }) => {
                       title="Embedded youtube"
                     />
                 </div>
-                <img src={ PartyKittyDoodle } alt="Luna Ivy logo"/>
+                <img src={ PartyKittyDoodle } alt="Party Kitty"/>
             </div>
         </section>
     );
