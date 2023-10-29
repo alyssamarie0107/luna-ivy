@@ -4,14 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: red; */
 }
 
 #Shows > h1 {margin-bottom: 75px;}
 
 #showsContainer {
     width: 75vw;
-    /* background-color: green; */
+    background-color: green;
 }
 
 .listGroup {
@@ -29,8 +28,8 @@
     font-size: 20px;
 }
 
-@media only screen and (max-width: 991px) {
-    .listGroup {flex-direction: column;}
+@media only screen and (max-width: 591px) {
+    #showsContainer {width: 90vw;}
 
     .Location {width: 100%;}
 }
