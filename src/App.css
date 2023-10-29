@@ -1,4 +1,8 @@
 .App {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--cream);
     font-family: var(--header-font);
     overflow: hidden;
