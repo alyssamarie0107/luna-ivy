@@ -11,7 +11,7 @@ const Contact = () => {
             <div id={ styles.doodleContainer }>
                 <img
                     src={ KittyDoodle }
-                    width="300px"
+                    width="275px"
                     height="380px"
                     alt="KittyDoodle"
                 />
