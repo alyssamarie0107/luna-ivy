@@ -25,30 +25,31 @@ const CustomNavbar = () => {
             <Link 
               className={ styles.customLink }
               to="shows"
-              spy={true} 
-              smooth={true} 
-              offset={-50} 
-              duration={100}>
+              spy= {true } 
+              smooth={ true } 
+              offset={ -50 } 
+              duration={ 100 }>
                 shows
             </Link>
             <Link 
-              className={ styles.customLink } 
+              className={ styles.customLink }
               to="videos"
-              spy={true} 
-              smooth={true} 
-              offset={0} 
-              duration={100}>videos</Link>
+              spy={ true } 
+              smooth={ true } 
+              offset={ 0 } 
+              duration={ 100 }>videos</Link>
             <Link 
               className={ styles.customLink }
               to="music"
-              spy={true} 
-              smooth={true} 
-              offset={0} 
-              duration={100}>
+              spy={ true } 
+              smooth={ true } 
+              offset={ 0 } 
+              duration={ 100 }>
                 music
             </Link>
           </div>
 
+          {/* for desktop view */}
           <Navbar.Brand href="/" id={ styles.NavBrand }>
               <img
               src={ LunaIvyLogo }
@@ -60,24 +61,25 @@ const CustomNavbar = () => {
             <Link 
               className={ styles.customLink }
               to="merch"
-              spy={true} 
-              smooth={true} 
-              offset={0} 
-              duration={100}>
+              spy={ true } 
+              smooth={ true } 
+              offset={ 0 } 
+              duration={ 100 }>
                 merch
             </Link>
             <Link 
               className={ styles.customLink }
               to="contact"
-              spy={true} 
-              smooth={true} 
-              offset={-50} 
-              duration={100}>contact</Link>
+              spy={ true } 
+              smooth={ true } 
+              offset={ -50 } 
+              duration={ 100 }>contact</Link>
             <SocialBtns />
           </div>
         </Container>
       </Navbar.Collapse>
       
+      {/* for mobile view */}
       <Navbar.Brand href="#home" id={ styles.NavBrand2 }>
           <img
           src={ LunaIvyLogo }
