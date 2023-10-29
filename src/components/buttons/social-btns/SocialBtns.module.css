@@ -9,3 +9,7 @@
     margin: 0 8px;
     font-size: 20px;
 }
+
+.socialBtn:hover {
+    color: red;
+}

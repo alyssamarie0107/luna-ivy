@@ -31,6 +31,10 @@
     color: black;
 }
 
+.customLink:hover {
+    color: red;
+}
+
 #NavBrand > img {
     width: 310px;
     height: 260px;
