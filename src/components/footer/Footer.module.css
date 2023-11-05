@@ -2,8 +2,7 @@
 #Footer {
     display: flex;
     padding: 20px 30px;
-    color: red;
-    /* color: var(--cream); */
+    color: white;
     background-color: black;
 }
 

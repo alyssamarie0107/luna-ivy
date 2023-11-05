@@ -12,6 +12,7 @@ import HorizontalLine from './components/horizontal-line/HorizontalLine';
 import ScaleLoader from "react-spinners/ScaleLoader";
 import TopScrollBtn from './components/buttons/top-scroll-btn/TopScrollBtn';
 
+
 const App = () => {
   const [loading, setLoading] = useState(false);
 

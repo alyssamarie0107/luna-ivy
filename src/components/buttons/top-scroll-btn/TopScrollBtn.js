@@ -1,8 +1,20 @@
 import { Link } from 'react-scroll';
+// import { useState, useEffect } from 'react';
 import styles from './TopScrollBtn.module.css';
 import PartyKittyDoodle from '../../../assets/doodles/kitty2-transparent.png';
 
 const TopScrollBtn = () => {
+    // const [btnVisbility, setBtnVisibility] = useState("hidden");
+
+    // useEffect(() => {
+    //     // Update the document title using the browser API
+    //     const handleBtnVisibility = () => {
+    //         window.pageYOffset > 300 ? setBtnVisibility(true) : setBtnVisibility(false);
+    //     }
+
+    //     window.addEventListener('scroll', handleBtnVisibility);
+    //   });
+
     return (
         <Link 
             id={ styles.topScrollBtn }

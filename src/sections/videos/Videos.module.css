@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 }
 
 .Videos > h1 {margin-bottom: 50px;}
@@ -14,19 +13,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: blue; */
 }
 
 #VideosContainer > img {
   width: 20vw;
   height: 17vw;
-  /* background-color: green; */
 }
 
 #VideoResponsive {
   width: 60vw;
   height: 75vh;
-  /* background-color: orange; */
 }
 
 #VideoResponsive iframe {
@@ -35,8 +31,6 @@
 }
 
 @media only screen and (max-width: 1150px) {
-  /* #VideosContainer {background-color: green;} */
-
   #VideosContainer > img {display: none;}
 
   #VideoResponsive {
