@@ -28,11 +28,7 @@
     transition: all 0.3s ease 0s;
 }
 
-.customLink:hover {
-    color: white;
-    transform: translateY(-4px);
-    text-shadow: 1px 3px 1px black;
-}
+.customLink:hover {transform: translateY(-4px);}
 
 #NavBrand > img {
     width: 280px;
