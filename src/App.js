@@ -33,7 +33,7 @@ const App = () => {
       {
         loading ? (
           <ScaleLoader
-          color={"red"}
+          color={"black"}
           loading={loading}
           width={"10"}
           height={"50"}
