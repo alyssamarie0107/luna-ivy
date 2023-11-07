@@ -12,7 +12,7 @@ const homeContainerVariants = {
         opacity: 1,
         transition: { 
             delay: 2,
-            duration: 0.2,
+            duration: 0.3,
             when: "beforeChildren",
             staggerChildren: 2.5
         }
