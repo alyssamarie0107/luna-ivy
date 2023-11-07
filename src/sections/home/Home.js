@@ -1,17 +1,54 @@
 import styles from './Home.module.css';
+import { motion } from 'framer-motion';
 import SavyPhoto from '../../assets/photos/purple-daisies/purple-daisies.jpg'
+
+// animation variants
+// parent
+const homeContainerVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: { 
+            delay: 2,
+            duration: 0.2,
+            when: "beforeChildren",
+            staggerChildren: 2.5
+        }
+    }
+}
+
+// child
+const childVariants = {
+    hidden: {
+        opacity: 0,
+        x: "-100vw",
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 1.5
+        }
+    }
+}
 
 // home section 
 const Home = () => {
     return(
         <section className={ styles.Home } id="home">
-            <div id={ styles.homeContainer }>
-                <img src={ SavyPhoto } alt="Savy Cover Art"/>
+            <motion.div 
+                id={ styles.homeContainer }
+                variants={ homeContainerVariants }
+                initial="hidden"
+                animate="visible">
+                <img src={ SavyPhoto } alt="Savy Cover Art" />
                 <div id={ styles.newSingleInfo}>
-                    <h1>new single</h1>
-                    <h1>"purple daisies" out 11/9!</h1>
+                    <motion.h1 variants={ childVariants }>new single</motion.h1>
+                    <motion.h1 variants={ childVariants }>"purple daisies" out 11/9!</motion.h1>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }

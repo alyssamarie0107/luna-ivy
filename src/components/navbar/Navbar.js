@@ -1,8 +1,23 @@
 import styles from './Navbar.module.css';
 import { Link } from 'react-scroll';
 import { Navbar, Container } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import LunaIvyLogo from '../../assets/logo/lunaivy-transparent.png';
 import SocialBtns from '../buttons/social-btns/SocialBtns';
+
+// animation variants 
+const navbarVariants = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity:1,
+    transition: {
+      delay: 0.5,
+      duration: 0.5
+    }
+  }
+}
 
 /* 
  * navbar component
@@ -16,77 +31,82 @@ import SocialBtns from '../buttons/social-btns/SocialBtns';
 */ 
 const CustomNavbar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" id={ styles.customNavbar  }>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+    <motion.div 
+      variants={ navbarVariants }
+      initial="hidden" 
+      animate="visible">
+      <Navbar collapseOnSelect expand="lg" id={ styles.customNavbar }>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 
-      <Navbar.Collapse className={ styles.customNavbarCollapse } id="responsive-navbar-nav">
-        <Container id={ styles.customNav }>
-          <div>
-            <Link 
-              className={ styles.customLink }
-              to="shows"
-              spy= {true } 
-              smooth={ true } 
-              offset={ -50 } 
-              duration={ 100 }>
-                shows
-            </Link>
-            <Link 
-              className={ styles.customLink }
-              to="videos"
-              spy={ true } 
-              smooth={ true } 
-              offset={ 0 } 
-              duration={ 100 }>videos</Link>
-            <Link 
-              className={ styles.customLink }
-              to="music"
-              spy={ true } 
-              smooth={ true } 
-              offset={ 0 } 
-              duration={ 100 }>
-                music
-            </Link>
-          </div>
+        <Navbar.Collapse className={ styles.customNavbarCollapse } id="responsive-navbar-nav">
+          <Container id={ styles.customNav }>
+            <div>
+              <Link 
+                className={ styles.customLink }
+                to="shows"
+                spy= {true } 
+                smooth={ true } 
+                offset={ -50 } 
+                duration={ 100 }>
+                  shows
+              </Link>
+              <Link 
+                className={ styles.customLink }
+                to="videos"
+                spy={ true } 
+                smooth={ true } 
+                offset={ 0 } 
+                duration={ 100 }>videos</Link>
+              <Link 
+                className={ styles.customLink }
+                to="music"
+                spy={ true } 
+                smooth={ true } 
+                offset={ 0 } 
+                duration={ 100 }>
+                  music
+              </Link>
+            </div>
 
-          {/* for desktop view */}
-          <Navbar.Brand href="/" id={ styles.NavBrand }>
-              <img
-              src={ LunaIvyLogo }
-              alt="Luna Ivy logo"
-              />
-          </Navbar.Brand>
+            {/* for desktop view */}
+            <Navbar.Brand href="/" id={ styles.NavBrand }>
+                <img
+                src={ LunaIvyLogo }
+                alt="Luna Ivy logo"
+                />
+            </Navbar.Brand>
 
-          <div>
-            <Link 
-              className={ styles.customLink }
-              to="merch"
-              spy={ true } 
-              smooth={ true } 
-              offset={ 0 } 
-              duration={ 100 }>
-                merch
-            </Link>
-            <Link 
-              className={ styles.customLink }
-              to="contact"
-              spy={ true } 
-              smooth={ true } 
-              offset={ -50 } 
-              duration={ 100 }>contact</Link>
-            <SocialBtns />
-          </div>
-        </Container>
-      </Navbar.Collapse>
+            <div>
+              <Link 
+                className={ styles.customLink }
+                to="merch"
+                spy={ true } 
+                smooth={ true } 
+                offset={ 0 } 
+                duration={ 100 }>
+                  merch
+              </Link>
+              <Link 
+                className={ styles.customLink }
+                to="contact"
+                spy={ true } 
+                smooth={ true } 
+                offset={ -50 } 
+                duration={ 100 }>contact</Link>
+              <SocialBtns />
+            </div>
+          </Container>
+        </Navbar.Collapse>
       
-      {/* for mobile view */}
-      <Navbar.Brand href="#home" id={ styles.NavBrand2 }>
-          <img
-          src={ LunaIvyLogo }
-          alt="Luna Ivy logo2"
-          />
-      </Navbar.Brand>
-    </Navbar>
+        {/* for mobile view */}
+        <Navbar.Brand href="#home" id={ styles.NavBrand2 }>
+            <img
+            src={ LunaIvyLogo }
+            alt="Luna Ivy logo2"
+            />
+        </Navbar.Brand>
+      </Navbar>
+    </motion.div>
   );
 }
 
