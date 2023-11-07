@@ -46,7 +46,7 @@ const App = () => {
             <Home />
             <HorizontalLine />
             <Shows />
-            <TopScrollBtn />
+            {/* <TopScrollBtn /> */}
             <HorizontalLine />
             <Videos embedId="L_bkwHCTjqA" />
             <HorizontalLine />
