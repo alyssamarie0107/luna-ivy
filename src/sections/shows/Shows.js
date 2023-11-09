@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 // animation variants
-// parent
 const showContainerVariants = {
     hidden: {
         opacity: 0
