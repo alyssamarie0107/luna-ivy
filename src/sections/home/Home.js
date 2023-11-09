@@ -43,11 +43,11 @@ const Home = () => {
                 variants={ homeContainerVariants }
                 initial="hidden"
                 animate="visible">
-                <img src={ SavyPhoto } alt="Savy Cover Art" />
-                <div id={ styles.newSingleInfo}>
-                    <motion.h1 variants={ childVariants }>new single</motion.h1>
-                    <motion.h1 variants={ childVariants }>"purple daisies" out now!</motion.h1>
-                </div>
+                    <img src={ SavyPhoto } alt="Savy Cover Art" />
+                    <div id={ styles.newSingleInfo}>
+                        <motion.h1 variants={ childVariants }>new single</motion.h1>
+                        <motion.h1 variants={ childVariants }>"purple daisies" out now!</motion.h1>
+                    </div>
             </motion.div>
         </section>
     );
