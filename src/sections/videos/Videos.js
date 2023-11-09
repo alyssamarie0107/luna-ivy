@@ -12,17 +12,16 @@ const videoContainerVariants = {
         opacity: 1,
         transition: { 
             delay: 1.5,
-            duration: 1,
-            when: "beforeChildren",
-            staggerChildren: 5
+            duration: 1
         }
     }
 }
 
+
 // video(s) section 
 const Videos = ({ embedId }) => {
     return(
-        <motion.section className={ styles.Videos } id="videos">
+        <section className={ styles.Videos } id="videos">
             <motion.h1
                 variants={ videoContainerVariants }
                 initial="hidden"
@@ -30,13 +29,14 @@ const Videos = ({ embedId }) => {
                 viewport={{ once: true }}>
                     "pity" music video out now!
             </motion.h1>
-            <motion.div
+            <motion.div 
+                id={ styles.videosContainer }
                 variants={ videoContainerVariants }
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}>
                 <img src={ PartyKittyDoodle } alt="Party Kitty"/>
-                <div id={ styles.VideoResponsive }>
+                <div id={ styles.videoResponsive }>
                     <iframe
                       src={`https://www.youtube.com/embed/${ embedId }`}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -46,7 +46,7 @@ const Videos = ({ embedId }) => {
                 </div>
                 <img src={ PartyKittyDoodle } alt="Party Kitty"/>
             </motion.div>
-        </motion.section>
+        </section>
     );
 }
 

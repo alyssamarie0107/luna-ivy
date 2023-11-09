@@ -9,24 +9,24 @@
 
 .Videos > h1 {margin-bottom: 50px;}
 
-#VideosContainer {
+#videosContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#VideosContainer > img {
+#videosContainer > img {
   width: 20vw;
   height: 17vw;
   animation: rotate 3s infinite linear;
 }
 
-#VideoResponsive {
+#videoResponsive {
   width: 60vw;
   height: 75vh;
 }
 
-#VideoResponsive iframe {
+#videoResponsive iframe {
   height: 100%;
   width: 100%;
 }
@@ -37,9 +37,9 @@
 }
 
 @media only screen and (max-width: 1150px) {
-  #VideosContainer > img {display: none;}
+  #videosContainer > img {display: none;}
 
-  #VideoResponsive {
+  #videoResponsive {
     width: 100vw;
     height: 100vh;
   }
