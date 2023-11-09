@@ -11,10 +11,10 @@ const homeContainerVariants = {
     visible: {
         opacity: 1,
         transition: { 
-            delay: 2,
-            duration: 0.3,
+            delay: 1,
+            duration: 0.5,
             when: "beforeChildren",
-            staggerChildren: 2.5
+            staggerChildren: 1
         }
     }
 }
@@ -29,7 +29,7 @@ const childVariants = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 1.5
+            duration: 1
         }
     }
 }
@@ -46,7 +46,7 @@ const Home = () => {
                 <img src={ SavyPhoto } alt="Savy Cover Art" />
                 <div id={ styles.newSingleInfo}>
                     <motion.h1 variants={ childVariants }>new single</motion.h1>
-                    <motion.h1 variants={ childVariants }>"purple daisies" out 11/9!</motion.h1>
+                    <motion.h1 variants={ childVariants }>"purple daisies" out now!</motion.h1>
                 </div>
             </motion.div>
         </section>
