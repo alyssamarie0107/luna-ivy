@@ -1,12 +1,38 @@
 import styles from './Shows.module.css';
+import { motion } from 'framer-motion';
 import ListGroup from 'react-bootstrap/ListGroup';
-// import ShowTicketsBtn from '../../components/buttons/show-tickets-btn/ShowTicketsBtn';
+
+// animation variants
+// parent
+const showContainerVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: { 
+            delay: 1,
+            duration: 0.5
+        }
+    }
+}
 
 const Shows = () => {
     return (
         <section className={ styles.Shows } id="shows">
-            <h1>Show Dates</h1>
-            <div id={ styles.showsContainer }>
+            <motion.h1
+                variants={ showContainerVariants }
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}>
+                    Show Dates
+            </motion.h1>
+            <motion.div 
+                id={ styles.showsContainer }
+                variants={ showContainerVariants }
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}>
                 <ListGroup>
                     <ListGroup.Item className={ styles.listGroup }>
                         <div className={ styles.DateVenue }>
@@ -34,7 +60,6 @@ const Shows = () => {
                         <div className= { styles.City }>
                             <p>San Francisco, CA</p>
                         </div>
-                        {/* <ShowTicketsBtn link="https://www.ticketweb.com/event/ha-vay-mommy-mommy-luna-neck-of-the-woods-tickets/13790888"/> */}
                     </ListGroup.Item>
                     <ListGroup.Item className={ styles.listGroup }>
                         <div className={ styles.DateVenue }>
@@ -64,7 +89,7 @@ const Shows = () => {
                         </div>
                     </ListGroup.Item>
                 </ListGroup>
-            </div>
+            </motion.div>
         </section>
     );
 }
