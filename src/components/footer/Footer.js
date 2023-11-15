@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 const getCurrentYear = () => {
     const date = new Date();
     let current_year = date.getFullYear();
-    return `©${ current_year } Luna Ivy`;
+    return `©${ current_year } luna ivy`;
 }
 
 const Footer = () => {

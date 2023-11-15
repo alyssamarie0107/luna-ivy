@@ -5,8 +5,8 @@ const Contact = () => {
     return (
         <section className={ styles.Contact } id="contact">
             <div id={ styles.contactContainer }>
-                <h2>Management:<br/>Alyssa Rodriguez</h2>
-                <h2>Booking:<br/><a href="mailto:booklunaivy@gmail.com">booklunaivy@gmail.com</a></h2>
+                <h2>management:<br/>alyssa rodriguez</h2>
+                <h2>booking:<br/><a href="mailto:booklunaivy@gmail.com">booklunaivy@gmail.com</a></h2>
             </div>
             <div id={ styles.doodleContainer }>
                 <img

@@ -16,7 +16,7 @@
 
 #contactContainer > h2:nth-child(1) {margin-bottom: 40px;}
 
-#contactContainer > h2 {letter-spacing: 4px;}
+#contactContainer > h2 {letter-spacing: 2.5px;}
 
 #contactContainer > h2 > a {
     color: var(--black);

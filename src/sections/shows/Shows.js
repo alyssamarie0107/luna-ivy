@@ -24,7 +24,7 @@ const Shows = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}>
-                    Show Dates
+                    show dates
             </motion.h1>
             <motion.div 
                 id={ styles.showsContainer }
