@@ -56,7 +56,9 @@ const CustomNavbar = () => {
                 spy={ true } 
                 smooth={ true } 
                 offset={ 0 } 
-                duration={ 100 }>videos</Link>
+                duration={ 100 }>
+                  videos
+              </Link>
               <Link 
                 className={ styles.customLink }
                 to="music"
@@ -92,7 +94,9 @@ const CustomNavbar = () => {
                 spy={ true } 
                 smooth={ true } 
                 offset={ -50 } 
-                duration={ 100 }>contact</Link>
+                duration={ 100 }>
+                  contact
+              </Link>
               <SocialBtns />
             </div>
           </Container>
