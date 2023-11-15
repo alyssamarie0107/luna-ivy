@@ -35,15 +35,6 @@ const Shows = () => {
                     <ListGroup>
                         <ListGroup.Item className={ styles.listGroup }>
                             <div className={ styles.DateVenue }>
-                                <p>Nov. 9, 2023</p>
-                                <p>Brick & Mortar</p>
-                            </div>
-                            <div className= { styles.City }>
-                                <p>San Francisco, CA</p>
-                            </div>
-                        </ListGroup.Item>
-                        <ListGroup.Item className={ styles.listGroup }>
-                            <div className={ styles.DateVenue }>
                                 <p>Nov. 18, 2023</p>
                                 <p>House Show</p>
                             </div>
