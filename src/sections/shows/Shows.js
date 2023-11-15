@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 // animation variants
-const showContainerVariants = {
+const showsVariants = {
     hidden: {
         opacity: 0
     },
@@ -20,7 +20,7 @@ const Shows = () => {
     return (
         <section className={ styles.Shows } id="shows">
             <motion.h1
-                variants={ showContainerVariants }
+                variants={ showsVariants }
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}>
@@ -28,7 +28,7 @@ const Shows = () => {
             </motion.h1>
             <motion.div 
                 id={ styles.showsContainer }
-                variants={ showContainerVariants }
+                variants={ showsVariants }
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}>
