@@ -11,8 +11,8 @@ const videoContainerVariants = {
     visible: {
         opacity: 1,
         transition: { 
-            delay: 1.5,
-            duration: 1
+            delay: 1,
+            duration: 1.5
         }
     }
 }
