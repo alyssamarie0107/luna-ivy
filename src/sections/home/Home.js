@@ -19,8 +19,24 @@ const homeContainerVariants = {
     }
 }
 
-// child
-const childVariants = {
+// children
+const childVariants1 = {
+    hidden: {
+        scale: 0,
+        x: "-100vw",
+        rotate: 360
+    },
+    visible: {
+        scale: 1,
+        x: 0,
+        rotate: 0,
+        transition: {
+            duration: 2
+        }
+    }
+}
+
+const childVariants2 = {
     hidden: {
         opacity: 0,
         x: "-100vw",
@@ -43,10 +59,13 @@ const Home = () => {
                 variants={ homeContainerVariants }
                 initial="hidden"
                 animate="visible">
-                    <img src={ SavyPhoto } alt="Savy Cover Art" />
+                    <motion.img 
+                        src={ SavyPhoto } 
+                        alt="Savy Cover Art"
+                        variants={ childVariants1 } />
                     <div id={ styles.newSingleInfo}>
-                        <motion.h1 variants={ childVariants }>new single</motion.h1>
-                        <motion.h1 variants={ childVariants }>"purple daisies" out now!</motion.h1>
+                        <motion.h1 variants={ childVariants2 }>new single</motion.h1>
+                        <motion.h1 variants={ childVariants2 }>"purple daisies" out now!</motion.h1>
                     </div>
             </motion.div>
         </section>
