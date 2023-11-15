@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import PartyKittyDoodle from '../../assets/doodles/kitty2-transparent.png';
 
 // animation variants
-const videoContainerVariants = {
+const videosVariants = {
     hidden: {
         opacity: 0
     },
@@ -22,7 +22,7 @@ const Videos = ({ embedId }) => {
     return(
         <section className={ styles.Videos } id="videos">
             <motion.h1
-                variants={ videoContainerVariants }
+                variants={ videosVariants }
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}>
@@ -30,7 +30,7 @@ const Videos = ({ embedId }) => {
             </motion.h1>
             <motion.div 
                 id={ styles.videosContainer }
-                variants={ videoContainerVariants }
+                variants={ videosVariants }
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}>
