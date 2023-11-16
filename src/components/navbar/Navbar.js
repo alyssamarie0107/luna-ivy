@@ -1,9 +1,10 @@
 import styles from './Navbar.module.css';
 import { Link } from 'react-scroll';
-import { Navbar, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 import LunaIvyLogo from '../../assets/logo/lunaivy-transparent.png';
 import SocialBtns from '../buttons/social-btns/SocialBtns';
+
 
 // animation variants 
 const navbarVariants = {
@@ -35,81 +36,90 @@ const CustomNavbar = () => {
       variants={ navbarVariants }
       initial="hidden" 
       animate="visible">
-      <Navbar collapseOnSelect expand="lg" id={ styles.customNavbar }>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 
-        <Navbar.Collapse className={ styles.customNavbarCollapse } id="responsive-navbar-nav">
-          <Container id={ styles.customNav }>
-            <div>
-              <Link 
-                className={ styles.customLink }
-                to="shows"
-                spy= {true } 
-                smooth={ true } 
-                offset={ -50 } 
-                duration={ 100 }>
-                  shows
-              </Link>
-              <Link 
-                className={ styles.customLink }
-                to="videos"
-                spy={ true } 
-                smooth={ true } 
-                offset={ 0 } 
-                duration={ 100 }>
-                  videos
-              </Link>
-              <Link 
-                className={ styles.customLink }
-                to="music"
-                spy={ true } 
-                smooth={ true } 
-                offset={ 0 } 
-                duration={ 100 }>
-                  music
-              </Link>
-            </div>
+        <Navbar key='lg' expand='lg' id={ styles.customNavbar }>
+          <Container fluid id={ styles.navbarContainer }>
+            <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
+            <Navbar.Offcanvas
+              className={ styles.Offcanvas }
+              id="offcanvasNavbar-expand-lg"
+              aria-labelledby="offcanvasNavbarLabel-expand-lg"
+              placement="end"
+            >
+              <Offcanvas.Header closeButton id={ styles.closeButton }></Offcanvas.Header>
+              <Offcanvas.Body id={ styles.OffcanvasBody }>
+                <Nav id={ styles.customNav }>
+                  <div>
+                      <Link 
+                        className={ styles.customLink }
+                        to="shows"
+                        spy= {true } 
+                        smooth={ true } 
+                        offset={ -50 } 
+                        duration={ 100 }>
+                          shows
+                      </Link>
+                      <Link 
+                        className={ styles.customLink }
+                        to="videos"
+                        spy={ true } 
+                        smooth={ true } 
+                        offset={ 0 } 
+                        duration={ 100 }>
+                          videos
+                      </Link>
+                      <Link 
+                        className={ styles.customLink }
+                        to="music"
+                        spy={ true } 
+                        smooth={ true } 
+                        offset={ 0 } 
+                        duration={ 100 }>
+                          music
+                      </Link>
+                    </div>
 
-            {/* for desktop view */}
-            <Navbar.Brand href="/" id={ styles.NavBrand }>
-                <img
-                src={ LunaIvyLogo }
-                alt="Luna Ivy logo"
-                />
-            </Navbar.Brand>
+                    {/* for desktop view */}
+                    <Navbar.Brand href="/" id={ styles.NavBrand }>
+                        <img
+                        src={ LunaIvyLogo }
+                        alt="Luna Ivy logo"
+                        />
+                    </Navbar.Brand>
 
-            <div>
-              <Link 
-                className={ styles.customLink }
-                to="merch"
-                spy={ true } 
-                smooth={ true } 
-                offset={ 0 } 
-                duration={ 100 }>
-                  merch
-              </Link>
-              <Link 
-                className={ styles.customLink }
-                to="contact"
-                spy={ true } 
-                smooth={ true } 
-                offset={ -50 } 
-                duration={ 100 }>
-                  contact
-              </Link>
-              <SocialBtns />
-            </div>
+                    <div>
+                      <Link 
+                        className={ styles.customLink }
+                        to="merch"
+                        spy={ true } 
+                        smooth={ true } 
+                        offset={ 0 } 
+                        duration={ 100 }>
+                          merch
+                      </Link>
+                      <Link 
+                        className={ styles.customLink }
+                        to="contact"
+                        spy={ true } 
+                        smooth={ true } 
+                        offset={ -50 } 
+                        duration={ 100 }>
+                          contact
+                      </Link>
+                      <SocialBtns />
+                    </div>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
           </Container>
-        </Navbar.Collapse>
-      
-        {/* for mobile view */}
-        <Navbar.Brand href="#home" id={ styles.NavBrand2 }>
-            <img
-            src={ LunaIvyLogo }
-            alt="Luna Ivy logo2"
-            />
-        </Navbar.Brand>
-      </Navbar>
+          {/* for mobile view */}
+          <Navbar.Brand href="#home" id={ styles.NavBrand2 }>
+              <img
+              src={ LunaIvyLogo }
+              alt="Luna Ivy logo2"
+              />
+          </Navbar.Brand>
+        </Navbar>
     </motion.div>
   );
 }
