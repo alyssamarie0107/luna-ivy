@@ -24,7 +24,25 @@
 }
 
 #doodleContainer {
+    height: 450px;
     display: flex;
     justify-content: flex-end;
-    margin: 30px 75px 40px 0;
+    margin: 30px 75px 0 0;
+}
+
+#doodleContainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backToTop {
+    font-size: 18px;
+    text-align: center;
+}
+
+#kittyDoodle {
+    width: 270px;
+    height: 380px;
+    cursor: pointer;
 }

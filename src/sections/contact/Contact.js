@@ -1,5 +1,7 @@
 import styles from './Contact.module.css';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+import { useState } from 'react';
 import KittyDoodle from '../../assets/doodles/kitty-transparent.png';
 
 // animation variants
@@ -16,7 +18,18 @@ const contactVariants = {
     }
 }
 
+const backToTopVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1
+    }
+}
+
 const Contact = () => {
+    const [isShown, setIsShown] = useState(false);
+
     return (
         <section className={ styles.Contact } id="contact">
             <div id={ styles.contactContainer }>
@@ -41,12 +54,31 @@ const Contact = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}>
-                <img
-                    src={ KittyDoodle }
-                    width="275px"
-                    height="380px"
-                    alt="KittyDoodle"
-                />
+                    <div>
+                        <Link
+                            to="home"
+                            spy= {true } 
+                            smooth={ true } 
+                            offset={ -400 } 
+                            duration={ 100 }>
+                                <img
+                                    id={ styles.kittyDoodle }
+                                    src={ KittyDoodle }
+                                    alt="KittyDoodle"
+                                    onMouseEnter={() => setIsShown(true)}
+                                    onMouseLeave={() => setIsShown(false)}
+                                />
+                                {isShown && (
+                                    <motion.p
+                                        id={ styles.backToTop }
+                                        variants={ backToTopVariants }
+                                        initial="hidden"
+                                        whileInView="visible">
+                                            back to top
+                                    </motion.p>
+                                )}
+                            </Link>
+                    </div>
             </motion.div>
         </section>
     );
