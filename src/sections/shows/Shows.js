@@ -45,7 +45,7 @@ const Shows = () => {
                         <ListGroup.Item className={ styles.listGroup }>
                             <div className={ styles.DateVenue }>
                                 <p>Dec. 1, 2023</p>
-                                <p>Psyched! Radio SF</p>
+                                <p>The Knockout</p>
                             </div>
                             <div className= { styles.City }>
                                 <p>San Francisco, CA</p>
@@ -58,24 +58,6 @@ const Shows = () => {
                             </div>
                             <div className= { styles.City }>
                                 <p>San Francisco, CA</p>
-                            </div>
-                        </ListGroup.Item>
-                        <ListGroup.Item className={ styles.listGroup }>
-                            <div className={ styles.DateVenue }>
-                                <p>Dec. 31, 2023</p>
-                                <p>New Year's House Show</p>
-                            </div>
-                            <div className= { styles.City }>
-                                <p>Oakland, CA</p>
-                            </div>
-                        </ListGroup.Item>
-                        <ListGroup.Item className={ styles.listGroup }>
-                            <div className={ styles.DateVenue }>
-                                <p>Jan. 27, 2024</p>
-                                <p>The Sesh</p>
-                            </div>
-                            <div className= { styles.City }>
-                                <p>Sacramento, CA</p>
                             </div>
                         </ListGroup.Item>
                     </ListGroup>
