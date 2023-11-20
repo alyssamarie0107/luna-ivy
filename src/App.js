@@ -6,12 +6,11 @@ import Home from './sections/home/Home';
 import Shows from './sections/shows/Shows';
 import Videos from './sections/videos/Videos';
 import Music from './sections/music/Music';
+import Merch from './sections/merch/Merch';
 import Contact from './sections/contact/Contact';
 import Footer from './components/footer/Footer';
 import HorizontalLine from './components/horizontal-line/HorizontalLine';
 import ScaleLoader from "react-spinners/ScaleLoader";
-import TopScrollBtn from './components/buttons/top-scroll-btn/TopScrollBtn';
-
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -51,6 +50,8 @@ const App = () => {
             <Videos embedId="L_bkwHCTjqA" />
             <HorizontalLine />
             <Music />
+            <HorizontalLine />
+            <Merch />
             <HorizontalLine />
             <Contact />
             <Footer />
