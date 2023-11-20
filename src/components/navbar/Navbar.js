@@ -39,12 +39,13 @@ const CustomNavbar = () => {
 
         <Navbar key='lg' expand='lg' id={ styles.customNavbar }>
           <Container fluid id={ styles.navbarContainer }>
-            <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
+            <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg"/>
             <Navbar.Offcanvas
               className={ styles.Offcanvas }
               id="offcanvasNavbar-expand-lg"
               aria-labelledby="offcanvasNavbarLabel-expand-lg"
               placement="end"
+              restoreFocus={false}
             >
               <Offcanvas.Header closeButton id={ styles.closeButton }></Offcanvas.Header>
               <Offcanvas.Body id={ styles.OffcanvasBody }>
