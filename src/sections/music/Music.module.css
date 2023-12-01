@@ -57,6 +57,7 @@
     #musicHeader > img {
         width: 20vw;
         height: 20vh;
+        margin: 0 40px;
         animation: none !important;
     }
 
