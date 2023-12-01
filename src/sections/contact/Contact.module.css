@@ -46,3 +46,7 @@
     height: 380px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 650px) {
+    #contactContainer > h2 {font-size: 30px;}
+}
