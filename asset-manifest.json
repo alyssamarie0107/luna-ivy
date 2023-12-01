@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/luna-ivy/static/css/main.9d87a6b9.css",
+    "main.js": "/luna-ivy/static/js/main.041ab727.js",
+    "static/media/pity.png": "/luna-ivy/static/media/pity.c57f242e5d13a6e4317d.png",
+    "static/media/purple-daisies.jpg": "/luna-ivy/static/media/purple-daisies.b05ba91c2ac048175573.jpg",
+    "static/media/savy-cover-art.jpg": "/luna-ivy/static/media/savy-cover-art.bff63c933eef44ed8275.jpg",
+    "static/media/black-shirt.png": "/luna-ivy/static/media/black-shirt.5eb27df88a6019405a7b.png",
+    "static/media/cream-shirt.png": "/luna-ivy/static/media/cream-shirt.3f61ffb40a7be5964495.png",
+    "static/media/beetle.png": "/luna-ivy/static/media/beetle.017c0afd1437ee233ff8.png",
+    "static/media/lunaivy-transparent.png": "/luna-ivy/static/media/lunaivy-transparent.4397d5996e308c6f8a14.png",
+    "static/media/kitty-transparent.png": "/luna-ivy/static/media/kitty-transparent.9ed610d3b2e806961279.png",
+    "static/media/kitty2-transparent.png": "/luna-ivy/static/media/kitty2-transparent.6973018feeb26cb10901.png",
+    "index.html": "/luna-ivy/index.html",
+    "main.9d87a6b9.css.map": "/luna-ivy/static/css/main.9d87a6b9.css.map",
+    "main.041ab727.js.map": "/luna-ivy/static/js/main.041ab727.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d87a6b9.css",
+    "static/js/main.041ab727.js"
+  ]
+}
