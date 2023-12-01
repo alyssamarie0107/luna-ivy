@@ -13,7 +13,7 @@ const musicVariants = {
         opacity: 1,
         transition: { 
             delay: 1,
-            duration: 1.5
+            duration: 1
         }
     },
     hover: {
