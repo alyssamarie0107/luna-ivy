@@ -11,3 +11,11 @@
     margin-top: 50px;
     flex-wrap: wrap;
 }
+
+
+@media only screen and (max-width: 650px) {
+    #MerchContainer > img {
+        width: 90vw;
+        height: 90vw;
+    }
+}
