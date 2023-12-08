@@ -35,8 +35,8 @@ const Shows = () => {
                     <ListGroup>
                         <ListGroup.Item className={ styles.listGroup }>
                             <div className={ styles.DateVenue }>
-                                <p>Dec. 1, 2023</p>
-                                <p>The Knockout</p>
+                                <p>Dec. 10, 2023</p>
+                                <p>Neck of the Woods</p>
                             </div>
                             <div className= { styles.City }>
                                 <p>San Francisco, CA</p>
@@ -44,11 +44,11 @@ const Shows = () => {
                         </ListGroup.Item>
                         <ListGroup.Item className={ styles.listGroup }>
                             <div className={ styles.DateVenue }>
-                                <p>Dec. 10, 2023</p>
-                                <p>Neck of the Woods</p>
+                                <p>Dec. 22, 2023</p>
+                                <p>House Show</p>
                             </div>
                             <div className= { styles.City }>
-                                <p>San Francisco, CA</p>
+                                <p>Oakland, CA</p>
                             </div>
                         </ListGroup.Item>
                     </ListGroup>
