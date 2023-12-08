@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.b586e326.css",
-    "main.js": "/static/js/main.3a2580d2.js",
+    "main.css": "/static/css/main.25816d69.css",
+    "main.js": "/static/js/main.7880900f.js",
+    "static/media/animation.mov": "/static/media/animation.6389cf51f501af75b44f.mov",
     "static/media/pity.png": "/static/media/pity.c57f242e5d13a6e4317d.png",
     "static/media/purple-daisies.jpg": "/static/media/purple-daisies.b05ba91c2ac048175573.jpg",
     "static/media/savy-cover-art.jpg": "/static/media/savy-cover-art.bff63c933eef44ed8275.jpg",
@@ -12,11 +13,11 @@
     "static/media/kitty-transparent.png": "/static/media/kitty-transparent.9ed610d3b2e806961279.png",
     "static/media/kitty2-transparent.png": "/static/media/kitty2-transparent.6973018feeb26cb10901.png",
     "index.html": "/index.html",
-    "main.b586e326.css.map": "/static/css/main.b586e326.css.map",
-    "main.3a2580d2.js.map": "/static/js/main.3a2580d2.js.map"
+    "main.25816d69.css.map": "/static/css/main.25816d69.css.map",
+    "main.7880900f.js.map": "/static/js/main.7880900f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b586e326.css",
-    "static/js/main.3a2580d2.js"
+    "static/css/main.25816d69.css",
+    "static/js/main.7880900f.js"
   ]
 }
