@@ -1,6 +1,7 @@
 import styles from './Shows.module.css';
 import { motion } from 'framer-motion';
 import ListGroup from 'react-bootstrap/ListGroup';
+import animationVideo from '../../assets/videos/animation.mov';
 
 // animation variants
 const showsVariants = {
@@ -53,6 +54,10 @@ const Shows = () => {
                         </ListGroup.Item>
                     </ListGroup>
             </motion.div>
+
+            <video muted autoPlay loop controls={false} id={ styles.videoAnimation }>
+                <source src={ animationVideo }/>
+            </video>
         </section>
     );
 }

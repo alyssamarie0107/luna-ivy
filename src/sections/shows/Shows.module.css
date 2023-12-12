@@ -8,10 +8,7 @@
 
 .Shows > h1 {margin-bottom: 75px;}
 
-#showsContainer {
-    width: 75vw;
-    background-color: green;
-}
+#showsContainer {width: 75vw;}
 
 .listGroup {
     display: flex;
@@ -26,6 +23,11 @@
     padding: 0;
     margin: 0;
     font-size: 20px;
+}
+
+#videoAnimation {
+    width: 100%;
+    margin-top: 100px;
 }
 
 @media only screen and (max-width: 591px) {
